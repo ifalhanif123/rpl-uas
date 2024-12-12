@@ -1,0 +1,963 @@
+/* styls css admin */
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Container */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+  
+}
+
+.nav {
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav li {
+    padding: 15px;
+    text-align: center;
+}
+
+.nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    font-size: 15px;
+}
+
+.nav li a:hover {
+    background-color: #34495e;
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+}
+
+.header h1 {
+    color: #2c3e50;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.main-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.stat-box {
+    background-color: #ecf0f1;
+    padding: 20px;
+    width: 23%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box h3 {
+    color: #2c3e50;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.stat-box p {
+    font-size: 24px;
+    color: #2980b9;
+}
+
+.quick-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.action-btn {
+    background-color: #2980b9;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.action-btn:hover {
+    background-color: #3498db;
+}
+
+
+
+/* styls css mahasiswa dan dosen */
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  position: fixed;
+}
+.sidebar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.sidebar .nav-links {
+  list-style: none;
+  padding: 0;
+}
+.sidebar .nav-links li {
+  margin: 20px 0;
+}
+.sidebar .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.sidebar .nav-links li a:hover {
+  color: #3498db;
+}
+/* Main Content Styles */
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+}
+header {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+.dashboard-section {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.stats-cards {
+ display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+}
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.card button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card button:hover {
+  background-color: #2980b9;
+}
+/* Footer Styles */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+  
+
+
+/* data guru Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.guru-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.guru-sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.guru-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.guru-nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.guru-nav-links li {
+  margin-bottom: 10px;
+}
+
+.guru-nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.guru-nav-links a:hover {
+  background-color: #34495e;
+}
+
+/* Main Content */
+.guru-main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  overflow-y: auto;
+}
+
+.guru-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.guru-header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* Buttons */
+.guru-btn-primary {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.guru-btn-primary:hover {
+  background-color: #2980b9;
+}
+
+.guru-btn-secondary {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.guru-btn-secondary:hover {
+  background-color: #c0392b;
+}
+
+/* Table */
+.guru-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ecf0f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.guru-table th, .guru-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #bdc3c7;
+}
+
+.guru-table th {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.guru-table tr:hover {
+  background-color: #d5d8dc;
+}
+
+.guru-table td button {
+  margin-right: 5px;
+}
+
+
+
+/* Kelola data pelajaran Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.pelajaran-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.pelajaran-sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.pelajaran-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.pelajaran-nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pelajaran-nav-links li {
+  margin: 15px 0;
+}
+
+.pelajaran-nav-links a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.pelajaran-nav-links a:hover {
+  background-color: #34495e;
+}
+
+/* Main Content Styles */
+.pelajaran-main {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.pelajaran-header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #2c3e50;
+}
+
+.pelajaran-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form Styles */
+.pelajaran-form-section {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pelajaran-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pelajaran-form label {
+  font-weight: bold;
+}
+
+.pelajaran-form input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+}
+
+.pelajaran-btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pelajaran-btn:hover {
+  background-color: #34495e;
+}
+
+/* Table Styles */
+.pelajaran-table-section {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pelajaran-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pelajaran-table th, .pelajaran-table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #bdc3c7;
+}
+
+.pelajaran-table th {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+.pelajaran-table tr:hover {
+  background-color: #f4f4f9;
+}
+
+
+
+
+/* CSS for Kelola Jadwal Pelajaran */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.jadwal-container {
+  display: flex;
+  height: 100vh;
+}
+
+.jadwal-sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.jadwal-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.jadwal-nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.jadwal-nav-links li {
+  margin-bottom: 15px;
+}
+
+.jadwal-nav-links a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-size: 14px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.jadwal-nav-links a:hover {
+  background-color: #34495e;
+}
+
+.jadwal-main {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.jadwal-main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.jadwal-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.jadwal-header h1 {
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+.jadwal-content {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.jadwal-btn-primary {
+  background-color: #3498db;
+  color: white;
+}
+
+.jadwal-btn-secondary {
+  background-color: red;
+  color: white;
+}
+
+.jadwal-content button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.jadwal-content .btn-primary {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+.jadwal-content .btn-primary:hover {
+  background-color: #1c5980;
+}
+
+.jadwal-content .btn-secondary {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.jadwal-content .btn-secondary:hover {
+  background-color: #c0392b;
+}
+
+.jadwal-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.jadwal-table th, .jadwal-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.jadwal-table th {
+  background-color: #34495e;
+  color: #ecf0f1;
+}
+
+.jadwal-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.jadwal-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.jadwal-table td button {
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+
+
+/* General Data Siswa Styles */
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Container */
+.siswa-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.siswa-sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.siswa-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.siswa-nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.siswa-nav-links li {
+    margin-bottom: 15px;
+}
+
+.siswa-nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.siswa-nav-links a:hover {
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+/* Main Content */
+.siswa-main-content {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.siswa-main {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.siswa-header {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.siswa-header h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #2c3e50;
+}
+
+/* Form Section */
+.siswa-form-section {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.siswa-form-section h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+.siswa-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+.siswa-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.siswa-form button {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.siswa-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Table Section */
+.siswa-table-section {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.siswa-table-section h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+.siswa-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.siswa-table thead th {
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 10px;
+    text-align: left;
+}
+
+.siswa-table tbody td {
+    border: 1px solid #bdc3c7;
+    padding: 10px;
+}
+
+.siswa-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.siswa-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Buttons */
+.siswa-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.siswa-btn-primary {
+    background-color: #2ecc71;
+    color: #ffffff;
+}
+
+.siswa-btn-primary:hover {
+    background-color: #27ae60;
+}
+
+.siswa-btn-secondary {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+.siswa-btn-secondary:hover {
+    background-color: #c0392b;
+}
+
+
+
+
+/* tambah jadwal Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.layout-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.navigation-panel {
+  width: 240px;
+  background-color: #34495e;
+  color: #ecf0f1;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.brand-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.menu-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-links li {
+  margin: 15px 0;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.menu-links a:hover {
+  background-color: #2c3e50;
+}
+
+/* Main Content Styles */
+.content-area {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.content-header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #34495e;
+}
+
+.form-section {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-group input, .input-group select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+}
+
+.submit-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #34495e;
+  color: #ecf0f1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-button:hover {
+  background-color: #2c3e50;
+}

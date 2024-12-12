@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelola Data Pelajaran</title>
+    <link rel="stylesheet" href="stayls.css">
+</head>
+<body>
+    <div class="pelajaran-container">
+        <div class="pelajaran-sidebar">
+            <div class="pelajaran-logo">Sistem Pengelolaan Jadwal SMKN 3 Jombang</div>
+            <ul class="pelajaran-nav-links">
+                <li><a href="admin.html">Dashboard</a></li>
+                <li><a href="kelola_jadwal_pelajaran.html">Kelola Jadwal Pelajaran</a></li>
+                <li><a href="kelola_data_guru.html">Kelola Data Guru</a></li>
+                <li><a href="kelola_data_pelajaran.html">Kelola Data Mata Pelajaran</a></li>
+                <li><a href="kelola_data_siswa.html">Kelola Data Siswa</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+        <div class="pelajaran-main">
+            <header class="pelajaran-header">
+                <h1>Kelola Data Pelajaran</h1>
+            </header>
+            <main class="pelajaran-content">
+                <section class="pelajaran-form-section">
+                    <h2>Tambah Pelajaran</h2>
+                    <form id="tambahPelajaranForm" class="pelajaran-form">
+                        <label for="nomor">No:</label>
+                        <input type="number" id="nomor" name="nomor" required>
+
+                        <label for="namaPelajaran">Nama Pelajaran:</label>
+                        <input type="text" id="namaPelajaran" name="namaPelajaran" required>
+
+                        <label for="kodePelajaran">Kode Pelajaran:</label>
+                        <input type="text" id="kodePelajaran" name="kodePelajaran" required>
+
+                        <button type="submit" class="pelajaran-btn">Tambah</button>
+                    </form>
+                </section>
+
+                <section class="pelajaran-table-section">
+                    <h2>Daftar Pelajaran</h2>
+                    <table class="pelajaran-table">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama Pelajaran</th>
+                                <th>Kode Pelajaran</th>
+                            </tr>
+                        </thead>
+                        <tbody id="daftarPelajaran">
+                            <tr>
+                                <td>01</td>
+                                <td>Matematika</td>
+                                <td>221</td>
+                            </tr>
+                            <!-- Data pelajaran lainnya akan ditambahkan di sini -->
+                        </tbody>
+                    </table>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="script_pelajaran.js"></script>
+</body>
+</html>

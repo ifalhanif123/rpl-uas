@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelola Data Siswa</title>
+    <link rel="stylesheet" href="stayls.css">
+</head>
+<body>
+    <div class="siswa-container">
+        <div class="siswa-sidebar">
+            <div class="siswa-logo">Sistem Pengelolaan Jadwal SMKN 3 Jombang</div>
+            <ul class="siswa-nav-links">
+                <li><a href="admin.html">Dashboard</a></li>
+                <li><a href="kelola_jadwal_pelajaran.html">Kelola Jadwal Pelajaran</a></li>
+                <li><a href="kelola_data_guru.html">Kelola Data Guru</a></li>
+                <li><a href="kelola_data_pelajaran.html">Kelola Data Mata Pelajaran</a></li>
+                <li><a href="kelola_data_siswa.html">Kelola Data Siswa</a></li>
+                <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+    <div class="siswa-main">
+    <header class="siswa-header">
+        <h1>Kelola Data Siswa</h1>
+    </header>
+    <main class="siswa-main-content">
+        <section class="siswa-form-section">
+            <h2>Tambah Siswa</h2>
+            <form id="tambahSiswaForm" class="siswa-form">
+                <label for="nomor">No:</label>
+                <input type="number" id="nomor" name="nomor" required>
+                <br>
+                <label for="namaSiswa">Nama Siswa:</label>
+                <input type="text" id="namaSiswa" name="namaSiswa" required>
+                <br>
+                <label for="jeniskelamin">Jenis Kelamin:</label>
+                <select id="jeniskelamin" name="jeniskelamin"> 
+                    <option value="laki-laki">Laki-Laki</option>
+                    <option value="perempuan">Perempuan</option>
+                </select>
+                <br>
+                <label for="nis">NIS:</label>
+                <input type="number" id="nis" name="nis" required>
+                <br>
+                <button type="submit" class="siswa-btn">Tambah</button>
+            </form>
+        </section>
+        <section class="siswa-table-section">
+            <h2>Daftar Siswa</h2>
+            <table class="siswa-table">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Siswa</th>
+                        <th>Jenis Kelamin</th>
+                        <th>NIS</th>
+                    </tr>
+                </thead>
+                <tbody id="daftarSiswa">
+                    <tr>
+                        <td>1</td>
+                        <td>Ahmad Naufal Hanif</td>
+                        <td>Laki-Laki</td>
+                        <td>2395114073</td>
+                    </tr>
+                    <!-- Data siswa lainnya akan ditambahkan di sini -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    </div>
+    <script src="script_siswa.js"></script>
+</body>
+</html>

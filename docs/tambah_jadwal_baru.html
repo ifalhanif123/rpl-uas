@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tambah Jadwal Baru</title>
+  <link rel="stylesheet" href="stayls.css">
+</head>
+<body>
+  <div class="layout-container">
+    <aside class="navigation-panel">
+      <div class="brand-logo">Sistem Jadwal SMKN 3 Jombang</div>
+      <ul class="menu-links">
+        <li><a href="admin.html">Dashboard</a></li>
+        <li><a href="kelola_jadwal_pelajaran.html">Jadwal Pelajaran</a></li>
+        <li><a href="kelola_data_guru.html">Data Guru</a></li>
+        <li><a href="kelola_data_pelajaran.html">Data Mata Pelajaran</a></li>
+        <li><a href="kelola_data_siswa.html">Data Siswa</a></li>
+        <li><a href="#">Keluar</a></li>
+      </ul>
+    </aside>
+
+    <main class="content-area">
+      <header class="content-header">
+        <h1>Tambah Jadwal Baru</h1>
+      </header>
+      <section class="form-section">
+        <form class="schedule-form">
+          <div class="input-group">
+            <div class="input-group">
+              <label for="subject">Nomor:</label>
+              <input type="number" id="subject" name="subject">
+            </div>
+
+            <label for="day">Hari:</label>
+            <select id="day" name="day">
+              <option value="senin">Senin</option>
+              <option value="selasa">Selasa</option>
+              <option value="rabu">Rabu</option>
+              <option value="kamis">Kamis</option>
+              <option value="jumat">Jumat</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="subject">Ruang Kelas:</label>
+            <input type="text" id="subject" name="subject">
+          </div>
+
+          <div class="input-group">
+            <label for="time">Jam:</label>
+            <input type="time" id="time" name="time" placeholder="07:00 - 08:40">
+          </div>
+
+          <div class="input-group">
+            <label for="subject">Mata Pelajaran:</label>
+            <input type="text" id="subject" name="subject">
+          </div>
+
+          <div class="input-group">
+            <label for="teacher">Guru:</label>
+            <input type="text" id="teacher" name="teacher">
+          </div>
+
+          <button class="submit-button" type="submit">Simpan</button>
+          <a href="kelola_jadwal_pelajaran.html" class="submit-button">Batalkan</a>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

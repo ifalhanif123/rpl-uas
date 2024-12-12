@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelola Jadwal Pelajaran</title>
+  <link rel="stylesheet" href="stayls.css">
+</head>
+<body>
+  <div class="jadwal-container">
+    <div class="jadwal-sidebar">
+      <div class="jadwal-logo">Sistem Pengelolaan Jadwal SMKN 3 Jombang</div>
+      <ul class="jadwal-nav-links">
+        <li><a href="admin.html">Dashboard</a></li>
+        <li><a href="kelola_jadwal_pelajaran.html">Kelola Jadwal Pelajaran</a></li>
+        <li><a href="kelola_data_guru.html">Kelola Data Guru</a></li>
+        <li><a href="kelola_data_pelajaran.html">Kelola Data Mata Pelajaran</a></li>
+        <li><a href="kelola_data_siswa.html">Kelola Data Siswa</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
+    <div class="jadwal-main">
+      <header class="jadwal-header">
+        <h1>Kelola Jadwal Pelajaran</h1>
+      </header>
+      <div class="jadwal-content">
+        <button class="jadwal-btn-primary" onclick="window.location.href='tambah_jadwal_baru.html'">Tambah Jadwal Baru</button>
+        <button class="jadwal-btn-primary" onclick="window.location.href='cetak-jadwal.html'">Cetak Jadwal</button>
+        <table class="jadwal-table">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Hari</th>
+              <th>Ruang Kelas</th>
+              <th>Jam</th>
+              <th>Mapel</th>
+              <th>Guru</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Senin</td>
+              <td>01</td>
+              <td>07:00 - 10:00</td>
+              <td>Matematika</td>
+              <td>Pak Budi</td>
+              <td>
+                <button class="jadwal-btn-primary">Edit</button>
+                <button class="jadwal-btn-secondary">Hapus</button>
+              </td>
+            </tr>
+            <!-- Tambahkan baris lainnya sesuai kebutuhan -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
