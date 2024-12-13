@@ -1,3 +1,24 @@
+/* Logo SMK */
+.logo-smk {
+  position: absolute; /* Menempatkan logo di posisi tetap */
+  bottom: 60px; /* Jarak dari bawah */
+  left: 20px; /* Jarak dari kiri */
+  z-index: 1000; /* Memastikan logo berada di atas elemen lain */
+}
+
+.logo-smk img {
+  width: 200px; /* Ukuran lebar logo */
+  height: 200px; /* Menjaga proporsi asli logo */
+  border-radius: 10px; /* Opsional: Memberikan sudut yang melengkung */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan untuk mempercantik */
+  transition: transform 0.3s ease; /* Efek hover */
+}
+
+.logo-smk img:hover {
+  transform: scale(1.1); /* Memperbesar logo saat hover */
+}
+
+
 /* styls css dashboard admin */
 /* General Styles */
 * {
@@ -59,7 +80,7 @@ body {
 }
 
 .nav li a:hover {
-    background-color: #34495e;
+    background-color: blue;
 }
 
 /* Main Content */
@@ -278,7 +299,7 @@ body {
 }
 
 .guru-nav-links a:hover {
-  background-color: #34495e;
+  background-color: blue;
 }
 
 /* Main Content */
@@ -412,7 +433,7 @@ body {
 }
 
 .pelajaran-nav-links a:hover {
-  background-color: #34495e;
+  background-color: blue;
 }
 
 .button-data-pelajaran {
@@ -564,7 +585,7 @@ body {
 }
 
 .jadwal-nav-links a:hover {
-  background-color: #34495e;
+  background-color: blue;
 }
 
 .button-jadwal{
@@ -726,7 +747,7 @@ body {
 }
 
 .siswa-nav-links a:hover {
-    background-color: #34495e;
+    background-color: blue;
 }
 .button-siswa {
   border-bottom: 2px solid white
@@ -928,7 +949,7 @@ body {
 }
 
 .menu-links a:hover {
-  background-color: #2c3e50;
+  background-color: blue;
 }
 
 .button-tambah-jadwal {
@@ -1001,52 +1022,61 @@ body {
 
 
 /* Login Admin Style */
-.login-admin {
+/* Background untuk halaman login */
+body.login-admin {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('gambar/smkn3jombang.jpg') no-repeat center center fixed;
+  background-size: cover; /* Menutupi seluruh halaman */
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #34495e, #2c3e50);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  color: #fff;
+  font-family: 'Poppins', Arial, sans-serif; /* Font modern */
+  color: #fff; /* Warna teks default */
 }
 
-/* Container Styles */
+/* Container untuk kotak login */
 .login-admin-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  min-height: 100vh; /* Menyesuaikan tinggi layar penuh */
+  padding: 20px; /* Menambahkan padding agar lebih fleksibel */
 }
 
+/* Kotak login */
 .login-admin-box {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(12px); /* Lebih halus */
-  border-radius: 20px; /* Penyesuaian desain modern */
-  padding: 40px;
-  width: 360px;
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.15); /* Transparan putih dengan efek buram */
+  backdrop-filter: blur(10px); /* Efek blur untuk tampilan modern */
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Bayangan lebih halus */
   text-align: center;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  max-width: 400px;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out; /* Animasi muncul */
 }
 
-.login-admin-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+/* Animasi kotak login */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
+/* Header login */
 .login-admin-box h1 {
-  margin-bottom: 25px;
   font-size: 28px;
   font-weight: bold;
-  color: #f0f0f0;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Efek bayangan teks */
 }
 
-/* Input Wrapper */
+/* Input form */
 .login-input-wrapper {
   margin-bottom: 20px;
   text-align: left;
@@ -1054,56 +1084,61 @@ body {
 
 .login-input-wrapper label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   font-weight: bold;
   font-size: 14px;
-  color: #f5f5f5;
-  text-transform: uppercase;
+  color: #fff;
 }
 
 .login-input-wrapper input {
   width: 100%;
   padding: 12px;
+  border: none;
+  border-radius: 8px;
   font-size: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
-  outline: none;
-  transition: background 0.3s ease, border-color 0.3s ease;
+  background: rgba(255, 255, 255, 0.8); /* Transparan putih */
+  color: #333;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .login-input-wrapper input:focus {
-  background: rgba(255, 255, 255, 0.25);
-  border-color: #6a11cb;
-  box-shadow: 0 0 10px rgba(106, 17, 203, 0.8);
+  outline: none;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.8); /* Efek glow */
 }
 
-/* Login Button */
+/* Tombol login */
 .login-admin-button {
-  width: 100%;
-  padding: 14px 20px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  background: linear-gradient(to right, #007bff, #0056b3); /* Gradien biru */
+  color: white;
   border: none;
-  border-radius: 10px;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(106, 17, 203, 0.4);
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.5);
 }
 
 .login-admin-button:hover {
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  transform: scale(1.05);
+  background: linear-gradient(to right, #0056b3, #003580); /* Gradien lebih gelap */
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.8);
+  transform: scale(1.05); /* Efek zoom */
 }
 
-/* Responsive Design */
-@media (max-width: 480px) {
+/* Responsive styling */
+@media (max-width: 768px) {
   .login-admin-box {
-    width: 90%;
-    padding: 30px;
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .login-admin-box h1 {
+    font-size: 24px;
   }
 }
+
+
 
