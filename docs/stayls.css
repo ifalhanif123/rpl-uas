@@ -17,7 +17,7 @@ body {
 }
 
 /* Layar HP (maksimal 480px) */
-@media (max-width: 480px) {
+@media (max-width: 300px) {
   body {
     font-size: 12px;
   }
