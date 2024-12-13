@@ -1,3 +1,35 @@
+/* Default (desktop atau layar besar) */
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layar tablet (maksimal 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Layar HP (maksimal 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .menu-links {
+    display: block;
+    text-align: center;
+  }
+}
+
+
+
 /* styls css dashboard admin */
 /* General Styles */
 * {
