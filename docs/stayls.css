@@ -398,7 +398,7 @@ body {
 }
 
 .pelajaran-nav-links li {
-  margin: 15px;
+  margin-bottom: 15px;
 }
 
 .pelajaran-nav-links a {
@@ -435,8 +435,6 @@ body {
 .pelajaran-header {
   text-align: center;
   margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #2c3e50;
 }
 
 .pelajaran-content {
@@ -677,10 +675,11 @@ body {
 /* General Data Siswa Styles */
 /* General Styles */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  overflow-y: auto; /* Aktifkan scroll di seluruh halaman */
 }
 
 /* Container */
@@ -750,6 +749,8 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+
 
 .siswa-header h1 {
   text-align: center;
