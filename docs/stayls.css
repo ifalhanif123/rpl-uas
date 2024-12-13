@@ -27,29 +27,35 @@ body {
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.sidebar-header {
-    text-align: center;
-    padding: 10px;
-    font-size: 10px;
-  
+.logo-admin {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .nav {
     list-style: none;
     padding-left: 0;
+    margin: 0;
 }
 
 .nav li {
-    padding: 15px;
-    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button-admin {
+  border-bottom: 2px solid white
 }
 
 .nav li a {
-    color: white;
+    color: #ecf0f1;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
     display: block;
-    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 .nav li a:hover {
@@ -254,13 +260,17 @@ body {
 }
 
 .guru-nav-links li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.button-guru {
+  border-bottom: 2px solid white
 }
 
 .guru-nav-links a {
-  color: white;
+  color: #ecf0f1;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 14px;
   padding: 10px;
   display: block;
   border-radius: 5px;
@@ -275,7 +285,6 @@ body {
 .guru-main-content {
   flex: 1;
   padding: 20px;
-  background-color: white;
   overflow-y: auto;
 }
 
@@ -283,11 +292,12 @@ body {
   text-align: center;
   margin-bottom: 20px;
   color: #2c3e50;
+  border-bottom: 2px solid #2c3e50;
 }
 
 .guru-header h1 {
-  margin: 0;
-  font-size: 2em;
+  font-size: 24px;
+  color: #2c3e50;
 }
 
 /* Buttons */
@@ -388,13 +398,13 @@ body {
 }
 
 .pelajaran-nav-links li {
-  margin: 15px 0;
+  margin: 15px;
 }
 
 .pelajaran-nav-links a {
   text-decoration: none;
   color: #ecf0f1;
-  font-size: 16px;
+  font-size: 14px;
   display: block;
   padding: 10px;
   border-radius: 5px;
@@ -405,11 +415,21 @@ body {
   background-color: #34495e;
 }
 
+.button-data-pelajaran {
+  border-bottom: 2px solid white
+}
+
 /* Main Content Styles */
 .pelajaran-main {
   flex: 1;
   padding: 20px;
   background-color: #ffffff;
+}
+
+.pelaaran-main-content {
+  flex: 1;
+  padding: 20px;
+  overflow: auto;
 }
 
 .pelajaran-header {
@@ -548,6 +568,10 @@ body {
   background-color: #34495e;
 }
 
+.button-jadwal{
+  border-bottom: 2px solid white
+}
+
 .jadwal-main {
   flex: 1;
   padding: 20px;
@@ -563,6 +587,8 @@ body {
 .jadwal-header {
   margin-bottom: 20px;
   text-align: center;
+  color: #2c3e50;
+  border-bottom: 2px solid #2c3e50;
 }
 
 .jadwal-header h1 {
@@ -691,8 +717,9 @@ body {
 
 .siswa-nav-links a {
     text-decoration: none;
-    color: white;
-    padding: 10px 15px;
+    color: #ecf0f1;
+    font-size: 14px;
+    padding: 10px;
     display: block;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
@@ -700,7 +727,9 @@ body {
 
 .siswa-nav-links a:hover {
     background-color: #34495e;
-    color: #ecf0f1;
+}
+.button-siswa {
+  border-bottom: 2px solid white
 }
 
 /* Main Content */
@@ -862,7 +891,7 @@ body {
 
 /* Sidebar Styles */
 .navigation-panel {
-  width: 240px;
+  width: 250px;
   background-color: #34495e;
   color: #ecf0f1;
   padding: 20px;
@@ -883,13 +912,13 @@ body {
 }
 
 .menu-links li {
-  margin: 15px 0;
+  margin: 15px;
 }
 
 .menu-links a {
   text-decoration: none;
   color: #ecf0f1;
-  font-size: 16px;
+  font-size: 14px;
   display: block;
   padding: 10px;
   border-radius: 5px;
@@ -898,6 +927,10 @@ body {
 
 .menu-links a:hover {
   background-color: #2c3e50;
+}
+
+.button-tambah-jadwal {
+  border-bottom: 2px solid white
 }
 
 /* Main Content Styles */
