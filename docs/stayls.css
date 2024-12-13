@@ -1,3 +1,93 @@
+/* Aturan Dasar untuk Semua Ukuran */
+/* Responsif untuk Layar Lebar (Desktop Default) */
+@media (min-width: 992px) {
+  .sidebar {
+    width: 25%;
+    float: left;
+  }
+
+  .main-content {
+    width: 75%;
+    float: left;
+  }
+}
+
+/* Responsif untuk Tablet (768px - 991px) */
+@media (max-width: 991px) {
+  .sidebar {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  .main-content {
+    width: 100%;
+    float: none;
+  }
+
+  .menu-item {
+    font-size: 16px; /* Menyesuaikan ukuran font */
+  }
+}
+
+/* Responsif untuk Ponsel (di bawah 768px) */
+@media (max-width: 768px) {
+  .header {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-item {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
+  .login-admin-box {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .login-input-wrapper input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .login-admin-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Responsif untuk Layar Kecil (di bawah 480px) */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .menu-item {
+    font-size: 12px;
+  }
+
+  .login-admin-box {
+    padding: 10px;
+  }
+
+  .login-admin-button {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+}
+
+
+
+
+
 /* Logo SMK */
 .logo-smk {
   position: absolute; /* Menempatkan logo di posisi tetap */
