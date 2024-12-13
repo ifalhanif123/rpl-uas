@@ -1,32 +1,96 @@
-/* Default (desktop atau layar besar) */
+/* Default untuk layar besar (desktop) */
 body {
+  font-family: Arial, sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
 }
 
-/* Layar tablet (maksimal 768px) */
-@media (max-width: 768px) {
+/* Untuk layar HP kecil (320px - 480px) */
+@media (max-width: 480px) {
   body {
     font-size: 14px;
+    background-color: #fff;
   }
 
   .container {
     padding: 10px;
   }
-}
 
-/* Layar HP (maksimal 480px) */
-@media (max-width: 300px) {
-  body {
-    font-size: 12px;
+  .header {
+    font-size: 20px;
+    text-align: center;
   }
 
   .menu-links {
-    display: block;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu-links a {
+    font-size: 14px;
     text-align: center;
+    padding: 10px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px;
   }
 }
+
+/* Untuk layar HP besar atau tablet kecil (481px - 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  .header {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .menu-links {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  .menu-links a {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .form-group input {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
+
 
 
 
