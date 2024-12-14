@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendataan Ruang Kelas</title>
+  <link rel="stylesheet" href="stayls.css">
+</head>
+<body>
+  <div class="kelas-container">
+    <!-- Sidebar -->
+    <div class="kelas-sidebar">
+      <div class="kelas-logo">Sistem Pengelolaan Jadwal Pelajaran SMKN 3 Jombang</div>
+      <ul class="kelas-nav-links">
+        <li class="button-ruang"><a href="dashboard_admin.html">Dashboard</a></li>
+        <li class="button-ruang"><a href="data_ruang_kelas.html">Data Ruang Kelas</a></li>
+        <li class="button-ruang"><a href="Kelola_data_guru.html">Kelola Data Guru</a></li>
+        <li class="button-ruang"><a href="kelola_data_pelajaran.html">Kelola Data Mata Pelajaran</a></li>
+        <li class="button-ruang"><a href="Kelola_data_siswa.html">Kelola Data Siswa</a></li>
+        <li class="button-ruang"><a href="kelola_jadwal_pelajaran.html">Kelola Jadwal Pelajaran</a></li>
+        <li class="button-ruang"><a href="index.html">Logout</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="kelas-main">
+      <header class="kelas-header">
+        <h1>Pendataan Ruang Kelas</h1>
+      </header>
+      <div class="kelas-content">
+        <!-- Form Section -->
+        <section class="kelas-form-section">
+          <h2>Tambah Ruang Kelas Baru</h2>
+          <form class="kelas-form">
+            <label for="kelas-nama">Nama Ruang Kelas:</label>
+            <input type="text" id="kelas-nama" name="kelas-nama" placeholder="Contoh: Ruang A" required>
+            <label for="kelas-kapasitas">Kapasitas:</label>
+            <input type="number" id="kelas-kapasitas" name="kelas-kapasitas" placeholder="Masukkan jumlah kapasitas" required>
+            <button type="submit" class="kelas-btn">Simpan</button>
+          </form>
+        </section>
+
+        <!-- Table Section -->
+        <section class="kelas-table-section">
+          <h2>Daftar Ruang Kelas</h2>
+          <table class="kelas-table">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Nama Ruang</th>
+                <th>Kapasitas</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Ruang A</td>
+                <td>40</td>
+                <td>
+                  <button class="kelas-btn-primary">Edit</button>
+                  <button class="kelas-btn-secondary">Hapus</button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Ruang B</td>
+                <td>35</td>
+                <td>
+                  <button class="kelas-btn-primary">Edit</button>
+                  <button class="kelas-btn-secondary">Hapus</button>
+                </td>
+              </tr>
+              <!-- Tambahkan baris lainnya sesuai kebutuhan -->
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="logo-smk">
+    <img src="gambar/logo.png" alt="Logo SMK">
+  </div>
+</body>
+</html>
